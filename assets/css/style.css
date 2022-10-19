@@ -1,0 +1,93 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+/* Documentacion:
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+https://flexboxfroggy.com/#es */
+
+
+/* FLEXBOX */
+/* 1. Se alinean uno al lado del otro
+2. Se ajustan
+3. No se desbordan
+4. Se estiran los items si no tienen alto definido defecto align-items: stretch
+5. si no tienen un width se ajustan a su contenido
+
+-- Flex Direction --
+flex-direction: row | column | row-reverse | column-reverse
+
+-- Flex-wrap: nowrap | wrap | wrap-reverse
+
+
+eje main-axis
+justify-content: flex-start | flex -end | space-around | space-between | space-evenly
+
+Eje cross axis
+align-item
+align-content:  flex-start | flex -end | space-around | space-between |
+
+ */
+.container {
+	width: 600px;
+	height: 600px;
+	background-color: rgb(195, 238, 244);
+	display: flex;
+	/* justify-content: center;
+	align-items: flex-end; */
+	flex-direction: row;
+	
+	align-items: center;
+	flex-wrap: nowrap;
+	
+}
+
+ul {
+	display: flex;
+	flex-direction: column;
+}
+
+li {
+	list-style: none;
+	margin: 15px;
+	
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	width: 100%;
+	height: 100%;
+	
+}
+
+.item {
+	width: 150px;
+	height: 80px;
+	border: 1px solid black;
+	display: flex;
+}
+
+.item1 {
+	background-color: bisque;
+	
+}
+
+.item2 {
+	background-color: chocolate;
+	
+}
+
+.item3 {
+	background-color: coral;
+	
+	
+}
+
+.item4 {
+	background-color: cadetblue;
+}
